@@ -3,22 +3,22 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.subcontainer {
+.container {
   padding: 10px;
-  height: 500px;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap-reverse;
 }
 
-.subcontainer > img {
+.container > img {
   width: 650px;
-  height: 100%;
+  height: 500px;
   object-fit: cover;
 }
 
 .topleft {
-  height: 100%;
+  height: 500px;
   width: 500px;
   display: flex;
   flex-direction: column;
@@ -48,15 +48,15 @@
 }
 
 .bottom {
-  height: 500px;
   display: flex;
   align-items: center;
   justify-content: space-around;
   margin-bottom: 20px;
+  flex-wrap: wrap;
 }
 
 .bottomleft {
-  height: 100%;
+  height: 500px;
   width: 500px;
   display: flex;
   flex-direction: column;
@@ -98,7 +98,7 @@
 
 #map {
   width: 650px;
-  height: 100%;
+  height: 500px;
 }
 
 footer {
