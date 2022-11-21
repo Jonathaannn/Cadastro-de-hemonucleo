@@ -1,34 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/style/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/style/style.css" />
     <script src="assets/script/map.js"></script>
-    <link rel="shortcut icon" href="icon/icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="icon/icon.png" type="image/x-icon" />
     <title>Cadastro de Hemonúcleo</title>
-</head>
+  </head>
 
-<body>
-    <div id="map"></div>
+  <body>
+    <div class="subcontainer">
+      <div class="topleft">
+        <h1>Life Point</h1>
+        <h3>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. At, sunt
+          ipsum ab in iste neque alias aliquid commodi a maxime exercitationem
+          quis tempora nemo corrupti eius distinctio perspiciatis consequuntur
+          iure?
+        </h3>
 
-    <div id="form">
-        <form method="post">
-            <div>
-                <label for="name">Nome:</label>
-                <input type="text" id="nome" />
-            </div>
-            <div>
-                <button type="button" onclick="salvar()">Salvar</button>
-            </div>
-        </form>
+        <button>Marcar</button>
+      </div>
+      <img src="/assets/image.jpg" alt="image" />
     </div>
-    <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly" async></script>
-</body>
 
+    <div class="bottom">
+      <div class="bottomleft">
+        <h3>Adicionar Hemonúcleo</h3>
+
+        <form method="post" class="form">
+          <input type="text" id="nome" placeholder="Nome" />
+          <button type="button" onclick="Adicionar()">Adicionar</button>
+        </form>
+      </div>
+
+      <div id="map"></div>
+    </div>
+
+    <footer>
+      <h3>Lorem ipsum dolor sit amet</h3>
+    </footer>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+  </body>
 </html>
 
 <!-- Cavhe da api: AIzaSyC5pRLIElXRT8fhEVMlxW8_Boxr7ddCN_A -->

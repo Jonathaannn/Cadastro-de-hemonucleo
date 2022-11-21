@@ -1,11 +1,111 @@
-html,
-body {
-  height: 100%;
+* {
   margin: 0;
-  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.subcontainer {
+  padding: 10px;
+  height: 500px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.subcontainer > img {
+  width: 650px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.topleft {
+  height: 100%;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.topleft h1 {
+  color: #ff6392;
+  font-size: 70px;
+}
+
+.topleft h3 {
+  font-weight: normal;
+  font-size: 25px;
+}
+
+.topleft button {
+  border: none;
+  border-radius: 20px;
+  background-color: #ff6392;
+  height: 70px;
+  width: 100%;
+  font-size: 25px;
+  color: #ffff;
+  font-weight: bold;
+}
+
+.bottom {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.bottomleft {
+  height: 100%;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.bottomleft h3 {
+  color: #ff6392;
+  font-size: 30px;
+}
+
+.form {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.form input {
+  border: none;
+  height: 70px;
+  border-radius: 20px;
+  border: 1px solid gainsboro;
+  font-size: 25px;
+  padding: 0 10px;
+}
+
+.form button {
+  border: none;
+  background-color: #ff6392;
+  color: #ffff;
+  font-weight: bold;
+  height: 70px;
+  border-radius: 20px;
+  font-size: 25px;
 }
 
 #map {
-  width: 100%;
-  height: 400px;
+  width: 650px;
+  height: 100%;
+}
+
+footer {
+  height: 100px;
+  background-color: #ff6392;
+  display: grid;
+  place-content: center;
+  color: white;
+  font-size: 20px;
 }
