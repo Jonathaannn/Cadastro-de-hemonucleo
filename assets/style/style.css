@@ -15,6 +15,7 @@
   width: 650px;
   height: 500px;
   object-fit: cover;
+  margin: 100px 0;
 }
 
 .topleft {
@@ -36,18 +37,25 @@
   font-size: 25px;
 }
 
-.topleft button {
-  border: none;
+.topleft a {
+  display: block;
+  cursor: pointer;
+  padding: 20px 35px;
+  font-size: 2em;
+  text-decoration: none;
   border-radius: 20px;
-  background-color: #ff6392;
-  height: 70px;
-  width: 100%;
-  font-size: 25px;
   color: #ffff;
-  font-weight: bold;
+  box-shadow: 3px 3px 3px rgb(170, 170, 170);
+  transition: all 0.3s ease;
+  background-color: #ff6392;
 }
 
-.bottom {
+.topleft a:hover {
+  box-shadow: 6px 6px 6px rgb(170, 170, 170);
+  transition: all 0.3s ease;
+}
+
+#bottom {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -90,10 +98,17 @@
   border: none;
   background-color: #ff6392;
   color: #ffff;
-  font-weight: bold;
-  height: 70px;
+  padding: 20px 35px;
   border-radius: 20px;
-  font-size: 25px;
+  font-size: 2em;
+  cursor: pointer;
+  box-shadow: 3px 3px 3px rgb(170, 170, 170);
+  transition: all 0.3s ease;
+}
+
+.form button:hover {
+  transition: all 0.3s ease;
+  box-shadow: 6px 6px 6px rgb(170, 170, 170);
 }
 
 #map {
@@ -107,5 +122,5 @@ footer {
   display: grid;
   place-content: center;
   color: white;
-  font-size: 20px;
+  font-size: 15px;
 }
