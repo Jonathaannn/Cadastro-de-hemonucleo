@@ -18,7 +18,7 @@ initMap = () => {
     addMarker(evt);
   });
 
-  marker.addListener("posiion_changed", () => {
+  marker.addListener("position_changed", () => {
     map.setCenter(marker.position);
   });
 };
@@ -27,10 +27,23 @@ addMarker = (evt) => {
   marker.setPosition(evt.latLng);
 };
 
-salvar = () => {
-  const obj = {
+Salvar = () => {
+  const local = {
     nome: document.getElementById("nome").value,
     lat: marker.getPosition().lat(),
     lng: marker.getPosition().lng(),
   };
+  fetch("http://localhost:3000/hemonucleos", {
+    method: "POST",
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(local),
+  })
+    .then((response) => {
+      alert("Salvo com sucesso");
+    })
+    .catch((error) => alert("Falha ao salvar!"));
+  console.log(JSON.stringify(local));
 };
