@@ -47,3 +47,24 @@ Salvar = () => {
     .catch((error) => alert("Falha ao salvar!"));
   console.log(JSON.stringify(local));
 };
+
+Lista = () => {
+  fetch("http://localhost:3000/hemonucleos/")
+    .then((res) => res.json())
+    .then((pontos) => {
+      marker = new google.maps.Marker({
+        map: map,
+      });
+
+      pontos.forEach((location) => {
+        if (location.geometria) {
+          marker.setPosition(
+            new google.maps.LatLng(
+              location.geometria.coordinates[0],
+              location.geometria.coordinates[1]
+            )
+          );
+        }
+      });
+    });
+};
